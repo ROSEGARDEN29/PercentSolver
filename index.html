@@ -5,53 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Percentage Calculator - PercentSolver.com | 11 Free Advanced Percentage Calculators Online</title>
     <meta name="description" content="Complete percentage calculator suite with 11 specialized tools. Calculate percentages, discounts, tips, taxes, compound interest, markup, profit margins, grade percentages, and more. Free, fast, and mobile-friendly percentage solver for all your calculation needs.">
-    <meta name="keywords" content="percentage calculator, percent calculator, calculate percentage, percentage increase, percentage decrease, discount calculator, tip calculator, tax calculator, compound interest calculator, markup calculator, profit margin calculator, grade percentage calculator, sales tax calculator, percentage formula, online calculator, free calculator, percentage solver, math calculator, business calculator, shopping calculator, financial calculator, educational calculator">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="author" content="PercentSolver">
-    <meta name="language" content="English">
-    <meta name="geo.region" content="US">
-    <meta name="geo.placename" content="United States">
-    <meta name="distribution" content="global">
-    <meta name="rating" content="general">
-    <meta name="revisit-after" content="1 days">
+    <meta name="keywords" content="percentage calculator, percent calculator, calculate percentage, percentage increase, percentage decrease, discount calculator, tip calculator, tax calculator, compound interest calculator, markup calculator, profit margin calculator, grade percentage calculator">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://percentsolver.com">
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="PercentSolver">
     <meta property="og:url" content="https://percentsolver.com/">
     <meta property="og:title" content="PercentSolver - 11 Free Advanced Percentage Calculators Online">
-    <meta property="og:description" content="Complete percentage calculator suite with 11 specialized tools for discounts, tips, taxes, grades, business calculations and more. Calculate percentages instantly with our free online calculator tools. Fast, accurate, and always free.">
+    <meta property="og:description" content="Complete percentage calculator suite with 11 specialized tools for discounts, tips, taxes, grades, business calculations and more. Calculate percentages instantly with our free online calculator tools.">
     <meta property="og:image" content="https://percentsolver.com/og-image.png">
-    <meta property="og:image:alt" content="PercentSolver - Advanced Online Percentage Calculator Suite">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="en_US">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:site" content="@PercentSolver">
-    <meta property="twitter:creator" content="@PercentSolver">
     <meta property="twitter:title" content="PercentSolver - 11 Free Advanced Percentage Calculators">
     <meta property="twitter:description" content="Complete percentage calculator suite for discounts, tips, taxes, grades, and business calculations. Fast, accurate, and mobile-friendly.">
     <meta property="twitter:image" content="https://percentsolver.com/twitter-image.png">
-    <meta property="twitter:image:alt" content="PercentSolver Calculator Suite">
     
-    <!-- Additional SEO Meta Tags -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="PercentSolver">
-    <meta name="application-name" content="PercentSolver">
-    <meta name="msapplication-TileColor" content="#2dd4bf">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <!-- Theme -->
     <meta name="theme-color" content="#2dd4bf">
     
-    <!-- Preconnects for Performance -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "PercentSolver",
+        "url": "https://percentsolver.com",
+        "description": "Complete percentage calculator suite with 11 specialized tools for discounts, tips, taxes, grades, business calculations and more.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "creator": {
+            "@type": "Organization",
+            "name": "PercentSolver"
+        },
+        "featureList": [
+            "Basic percentage calculations",
+            "Discount calculator",
+            "Tip calculator", 
+            "Sales tax calculator",
+            "Grade percentage calculator",
+            "Markup calculator",
+            "Simple interest calculator",
+            "Compound interest calculator",
+            "Percentage increase calculator",
+            "Percentage decrease calculator"
+        ]
+    }
+    </script>
     
     <style>
         * {
@@ -272,13 +284,14 @@
         }
 
         .input-group input.error {
-            border-color: #ef4444;
-            background: rgba(239, 68, 68, 0.05);
+            border-color: #dc2626;
+            background: rgba(220, 38, 38, 0.1);
         }
 
         .error-message {
-            color: #ef4444;
+            color: #dc2626;
             font-size: 0.85rem;
+            font-weight: 600;
             margin-top: 5px;
             display: none;
         }
@@ -310,6 +323,28 @@
             height: 100%;
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             animation: resultShimmer 4s infinite;
+        }
+
+        .grade-scale {
+            background: rgba(255, 255, 255, 0.95);
+            border: 2px solid #2dd4bf;
+            border-radius: 12px;
+            padding: 15px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        .grade-scale h5 {
+            color: #0f172a;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .grade-scale div {
+            color: #475569;
+            margin-bottom: 4px;
         }
 
         @keyframes resultShimmer {
@@ -493,6 +528,31 @@
             .highlight-box { padding: 30px; }
         }
 
+        @media (max-width: 350px) {
+            .container { padding: 0 10px; }
+            .calc-grid { grid-template-columns: 1fr; }
+            .calc-card { 
+                padding: 20px; 
+                min-width: 0;
+            }
+            .info-card { padding: 20px; }
+            .header { padding: 30px 0; }
+            .calculator-section, .info-section { 
+                padding: 25px 15px; 
+                border-radius: 20px;
+            }
+            .highlight-box { 
+                padding: 25px 15px; 
+                border-radius: 16px;
+            }
+            .ad-sidebar {
+                min-width: 0;
+                width: 100%;
+                height: 120px;
+                font-size: 14px;
+            }
+        }
+
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(40px); }
             to { opacity: 1; transform: translateY(0); }
@@ -530,13 +590,13 @@
                     <h3>🧮 What is X% of Y?</h3>
                     <div class="input-group">
                         <label for="percent1">Percentage (%):</label>
-                        <input type="number" id="percent1" placeholder="e.g., 25" step="any" min="0">
-                        <div class="error-message" id="error1">Please enter a valid percentage</div>
+                        <input type="number" id="percent1" placeholder="e.g., 25" step="0.01" min="0" aria-label="Enter percentage value">
+                        <div class="error-message" id="error1">Please enter a valid percentage (0 or greater)</div>
                     </div>
                     <div class="input-group">
                         <label for="number1">Of number:</label>
-                        <input type="number" id="number1" placeholder="e.g., 200" step="any" min="0">
-                        <div class="error-message" id="error1b">Please enter a valid number</div>
+                        <input type="number" id="number1" placeholder="e.g., 200" step="0.01" min="0" aria-label="Enter base number">
+                        <div class="error-message" id="error1b">Please enter a valid number (0 or greater)</div>
                     </div>
                     <div class="result" id="result1">Enter values above</div>
                 </div>
@@ -545,12 +605,12 @@
                     <h3>📊 X is what % of Y?</h3>
                     <div class="input-group">
                         <label for="number2">Number:</label>
-                        <input type="number" id="number2" placeholder="e.g., 50" step="any" min="0">
-                        <div class="error-message" id="error2">Please enter a valid number</div>
+                        <input type="number" id="number2" placeholder="e.g., 50" step="0.01" min="0" aria-label="Enter number">
+                        <div class="error-message" id="error2">Please enter a valid number (0 or greater)</div>
                     </div>
                     <div class="input-group">
                         <label for="total1">Total:</label>
-                        <input type="number" id="total1" placeholder="e.g., 200" step="any" min="0.01">
+                        <input type="number" id="total1" placeholder="e.g., 200" step="0.01" min="0.01" aria-label="Enter total value">
                         <div class="error-message" id="error2b">Total must be greater than 0</div>
                     </div>
                     <div class="result" id="result2">Enter values above</div>
@@ -560,13 +620,13 @@
                     <h3>📈 Percentage Increase</h3>
                     <div class="input-group">
                         <label for="original1">Original value:</label>
-                        <input type="number" id="original1" placeholder="e.g., 100" step="any" min="0.01">
+                        <input type="number" id="original1" placeholder="e.g., 100" step="0.01" min="0.01" aria-label="Enter original value">
                         <div class="error-message" id="error3">Original value must be greater than 0</div>
                     </div>
                     <div class="input-group">
                         <label for="new1">New value:</label>
-                        <input type="number" id="new1" placeholder="e.g., 150" step="any" min="0">
-                        <div class="error-message" id="error3b">Please enter a valid new value</div>
+                        <input type="number" id="new1" placeholder="e.g., 150" step="0.01" min="0" aria-label="Enter new value">
+                        <div class="error-message" id="error3b">Please enter a valid new value (0 or greater)</div>
                     </div>
                     <div class="result" id="result3">Enter values above</div>
                 </div>
@@ -575,13 +635,13 @@
                     <h3>📉 Percentage Decrease</h3>
                     <div class="input-group">
                         <label for="original2">Original value:</label>
-                        <input type="number" id="original2" placeholder="e.g., 150" step="any" min="0.01">
+                        <input type="number" id="original2" placeholder="e.g., 150" step="0.01" min="0.01" aria-label="Enter original value">
                         <div class="error-message" id="error4">Original value must be greater than 0</div>
                     </div>
                     <div class="input-group">
                         <label for="new2">New value:</label>
-                        <input type="number" id="new2" placeholder="e.g., 120" step="any" min="0">
-                        <div class="error-message" id="error4b">Please enter a valid new value</div>
+                        <input type="number" id="new2" placeholder="e.g., 120" step="0.01" min="0" aria-label="Enter new value">
+                        <div class="error-message" id="error4b">Please enter a valid new value (0 or greater)</div>
                     </div>
                     <div class="result" id="result4">Enter values above</div>
                 </div>
@@ -590,12 +650,12 @@
                     <h3>💰 Discount Calculator</h3>
                     <div class="input-group">
                         <label for="price1">Original price ($):</label>
-                        <input type="number" id="price1" placeholder="e.g., 100" step="0.01" min="0.01">
+                        <input type="number" id="price1" placeholder="e.g., 100" step="0.01" min="0.01" aria-label="Enter original price">
                         <div class="error-message" id="error5">Price must be greater than 0</div>
                     </div>
                     <div class="input-group">
                         <label for="discount1">Discount (%):</label>
-                        <input type="number" id="discount1" placeholder="e.g., 20" step="any" min="0" max="100">
+                        <input type="number" id="discount1" placeholder="e.g., 20" step="0.01" min="0" max="100" aria-label="Enter discount percentage">
                         <div class="error-message" id="error5b">Discount must be between 0% and 100%</div>
                     </div>
                     <div class="result" id="result5">Enter values above</div>
@@ -605,27 +665,27 @@
                     <h3>🍽️ Tip Calculator</h3>
                     <div class="input-group">
                         <label for="bill">Bill amount ($):</label>
-                        <input type="number" id="bill" placeholder="e.g., 50" step="0.01" min="0.01">
+                        <input type="number" id="bill" placeholder="e.g., 50" step="0.01" min="0.01" aria-label="Enter bill amount">
                         <div class="error-message" id="error6">Bill amount must be greater than 0</div>
                     </div>
                     <div class="input-group">
                         <label for="tip">Tip percentage (%):</label>
-                        <input type="number" id="tip" placeholder="e.g., 18" step="any" min="0" max="100">
+                        <input type="number" id="tip" placeholder="e.g., 18" step="0.01" min="0" max="100" aria-label="Enter tip percentage">
                         <div class="error-message" id="error6b">Tip percentage must be between 0% and 100%</div>
                     </div>
                     <div class="result" id="result6">Enter values above</div>
                 </div>
 				
 				<div class="calc-card">
-                    <h3>🏪 Sales Tax Calculator</h3>
+                    <h3>💱 Sales Tax Calculator</h3>
                     <div class="input-group">
                         <label for="price2">Price before tax ($):</label>
-                        <input type="number" id="price2" placeholder="e.g., 100" step="0.01" min="0.01">
+                        <input type="number" id="price2" placeholder="e.g., 100" step="0.01" min="0.01" aria-label="Enter price before tax">
                         <div class="error-message" id="error7">Price must be greater than 0</div>
                     </div>
                     <div class="input-group">
                         <label for="taxRate">Tax rate (%):</label>
-                        <input type="number" id="taxRate" placeholder="e.g., 8.25" step="0.01" min="0" max="50">
+                        <input type="number" id="taxRate" placeholder="e.g., 8.25" step="0.01" min="0" max="50" aria-label="Enter tax rate percentage">
                         <div class="error-message" id="error7b">Tax rate must be between 0% and 50%</div>
                     </div>
                     <div class="result" id="result7">Enter values above</div>
@@ -635,27 +695,35 @@
                     <h3>📝 Grade Percentage Calculator</h3>
                     <div class="input-group">
                         <label for="pointsEarned">Points earned:</label>
-                        <input type="number" id="pointsEarned" placeholder="e.g., 85" step="0.1" min="0">
-                        <div class="error-message" id="error8">Points earned must be 0 or greater</div>
+                        <input type="number" id="pointsEarned" placeholder="e.g., 85" step="0.1" min="0" aria-label="Enter points earned">
+                        <div class="error-message" id="error8">Points earned must be 0 or greater and not exceed total points</div>
                     </div>
                     <div class="input-group">
                         <label for="totalPoints">Total points:</label>
-                        <input type="number" id="totalPoints" placeholder="e.g., 100" step="0.1" min="0.1">
+                        <input type="number" id="totalPoints" placeholder="e.g., 100" step="0.1" min="0.1" aria-label="Enter total points possible">
                         <div class="error-message" id="error8b">Total points must be greater than 0</div>
                     </div>
                     <div class="result" id="result8">Enter values above</div>
+                    <div class="grade-scale">
+                        <h5>Standard Grading Scale:</h5>
+                        <div><strong>A:</strong> 90-100% (Excellent)</div>
+                        <div><strong>B:</strong> 80-89% (Good)</div>
+                        <div><strong>C:</strong> 70-79% (Average)</div>
+                        <div><strong>D:</strong> 60-69% (Below Average)</div>
+                        <div><strong>F:</strong> Below 60% (Failing)</div>
+                    </div>
                 </div>
 
                 <div class="calc-card">
                     <h3>📊 Markup Calculator</h3>
                     <div class="input-group">
                         <label for="cost">Cost price ($):</label>
-                        <input type="number" id="cost" placeholder="e.g., 50" step="0.01" min="0.01">
+                        <input type="number" id="cost" placeholder="e.g., 50" step="0.01" min="0.01" aria-label="Enter cost price">
                         <div class="error-message" id="error9">Cost must be greater than 0</div>
                     </div>
                     <div class="input-group">
                         <label for="markup">Markup percentage (%):</label>
-                        <input type="number" id="markup" placeholder="e.g., 40" step="0.01" min="0">
+                        <input type="number" id="markup" placeholder="e.g., 40" step="0.01" min="0" max="1000" aria-label="Enter markup percentage">
                         <div class="error-message" id="error9b">Markup must be 0% or greater</div>
                     </div>
                     <div class="result" id="result9">Enter values above</div>
@@ -665,18 +733,18 @@
                     <h3>🏦 Simple Interest Calculator</h3>
                     <div class="input-group">
                         <label for="principal">Principal amount ($):</label>
-                        <input type="number" id="principal" placeholder="e.g., 1000" step="0.01" min="0.01">
+                        <input type="number" id="principal" placeholder="e.g., 1000" step="0.01" min="0.01" aria-label="Enter principal amount">
                         <div class="error-message" id="error10">Principal must be greater than 0</div>
                     </div>
                     <div class="input-group">
                         <label for="rate">Interest rate (% per year):</label>
-                        <input type="number" id="rate" placeholder="e.g., 5" step="0.01" min="0" max="100">
+                        <input type="number" id="rate" placeholder="e.g., 5" step="0.01" min="0" max="100" aria-label="Enter annual interest rate">
                         <div class="error-message" id="error10b">Rate must be between 0% and 100%</div>
                     </div>
                     <div class="input-group">
                         <label for="time">Time period (years):</label>
-                        <input type="number" id="time" placeholder="e.g., 2" step="0.1" min="0.1">
-                        <div class="error-message" id="error10c">Time must be greater than 0</div>
+                        <input type="number" id="time" placeholder="e.g., 2" step="0.01" min="0.01" max="100" aria-label="Enter time period in years">
+                        <div class="error-message" id="error10c">Time must be between 0.01 and 100 years</div>
                     </div>
                     <div class="result" id="result10">Enter values above</div>
                 </div>
@@ -685,17 +753,17 @@
                     <h3>💳 Compound Interest Calculator</h3>
                     <div class="input-group">
                         <label for="principal2">Principal amount ($):</label>
-                        <input type="number" id="principal2" placeholder="e.g., 1000" step="0.01" min="0.01">
+                        <input type="number" id="principal2" placeholder="e.g., 1000" step="0.01" min="0.01" aria-label="Enter principal amount">
                         <div class="error-message" id="error11">Principal must be greater than 0</div>
                     </div>
                     <div class="input-group">
                         <label for="rate2">Annual interest rate (%):</label>
-                        <input type="number" id="rate2" placeholder="e.g., 5" step="0.01" min="0" max="100">
+                        <input type="number" id="rate2" placeholder="e.g., 5" step="0.01" min="0" max="100" aria-label="Enter annual interest rate">
                         <div class="error-message" id="error11b">Rate must be between 0% and 100%</div>
                     </div>
                     <div class="input-group">
                         <label for="compound">Compound frequency:</label>
-                        <select id="compound">
+                        <select id="compound" aria-label="Select compounding frequency">
                             <option value="1">Annually</option>
                             <option value="2">Semi-annually</option>
                             <option value="4">Quarterly</option>
@@ -705,8 +773,8 @@
                     </div>
                     <div class="input-group">
                         <label for="time2">Time period (years):</label>
-                        <input type="number" id="time2" placeholder="e.g., 5" step="0.1" min="0.1">
-                        <div class="error-message" id="error11c">Time must be greater than 0</div>
+                        <input type="number" id="time2" placeholder="e.g., 5" step="0.01" min="0.01" max="100" aria-label="Enter time period in years">
+                        <div class="error-message" id="error11c">Time must be between 0.01 and 100 years</div>
                     </div>
                     <div class="result" id="result11">Enter values above</div>
                 </div>
@@ -750,7 +818,7 @@
                 </div>
 
                 <div class="info-card">
-                    <h4>🏪 Sales Tax Calculations</h4>
+                    <h4>💱 Sales Tax Calculations</h4>
                     <p>Sales tax calculation: Price × (Tax Rate ÷ 100) = Tax Amount. Total price = Original Price + Tax Amount. Sales tax rates vary by location, typically ranging from 0% to 15% depending on state and local regulations.</p>
                 </div>
 
@@ -771,7 +839,7 @@
 
                 <div class="info-card">
                     <h4>💳 Compound Interest Calculations</h4>
-                    <p>Compound Interest: A = P(1 + r/n)^(nt), where A=final amount, P=principal, r=annual rate, n=compounding frequency, t=time. Compound interest is crucial for savings accounts, investments, and long-term financial planning.</p>
+                    <p>Compound interest formula: A = P(1 + r/n)^(nt), where A=final amount, P=principal, r=annual interest rate (decimal), n=number of times interest compounds per year, t=time in years.</p>
                 </div>
                 
                 <div class="info-card">
@@ -823,7 +891,7 @@
                 </div>
 
                 <div class="info-card">
-                    <h4>🍽️ Service Industry</h4>
+                    <h4>🍽 Service Industry</h4>
                     <p>Restaurant staff and customers use percentage calculations for tip computations, service charge calculations, commission calculations for sales teams, and determining appropriate gratuity amounts based on service quality.</p>
                 </div>
 
@@ -840,19 +908,19 @@
         </section>
     </div>
 
-		<section class="info-section">
-            <div style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: 24px; padding: 40px; text-align: center; max-width: 500px; margin: 0 auto; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); border: 1px solid rgba(45, 212, 191, 0.1);">
-                <h3 style="background: linear-gradient(135deg, #6ee7b7 0%, #34d399 25%, #10b981 50%, #059669 75%, #047857 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 1.4rem; font-weight: 700; margin-bottom: 20px;">Buy me a coffee?</h3>
-                <p style="color: #475569; font-size: 1.1rem; line-height: 1.6; margin-bottom: 25px;">If PercentSolver helped you, consider supporting with a small Bitcoin donation. Your support keeps this tool free for everyone!</p>
-                <button onclick="document.getElementById('btcAddress').style.display = document.getElementById('btcAddress').style.display === 'none' ? 'block' : 'none'" style="background: linear-gradient(135deg, #6ee7b7 0%, #34d399 25%, #10b981 50%, #059669 75%, #047857 100%); color: white; border: none; padding: 15px 30px; border-radius: 20px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 20px rgba(45, 212, 191, 0.3);">Donate Bitcoin</button>
-                <div id="btcAddress" style="display: none; margin-top: 20px; background: #f8fafc; border: 2px solid #2dd4bf; border-radius: 12px; padding: 20px;">
-                    <p style="margin-bottom: 10px; font-weight: 600; color: #0f172a;">Bitcoin Address:</p>
-                    <code style="font-family: monospace; font-size: 0.9rem; color: #0f172a; word-break: break-all; display: block; margin-bottom: 15px;">bc1qxfc70kg5gtavn3mw5nypps970hqkzw6c885ya4</code>
-                    <button onclick="navigator.clipboard.writeText('bc1qxfc70kg5gtavn3mw5nypps970hqkzw6c885ya4'); this.textContent='Copied!'; setTimeout(() => this.textContent='Copy Address', 2000);" style="background: #2dd4bf; color: white; border: none; padding: 8px 15px; border-radius: 8px; cursor: pointer;">Copy Address</button>
-                    <p style="color: #059669; font-weight: 600; margin-top: 15px;">Thank you for your support!</p>
-                </div>
+    <section class="info-section">
+        <div style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: 24px; padding: 40px; text-align: center; max-width: 500px; margin: 0 auto; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); border: 1px solid rgba(45, 212, 191, 0.1);">
+            <h3 style="background: linear-gradient(135deg, #6ee7b7 0%, #34d399 25%, #10b981 50%, #059669 75%, #047857 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 1.4rem; font-weight: 700; margin-bottom: 20px;">Buy me a coffee?</h3>
+            <p style="color: #475569; font-size: 1.1rem; line-height: 1.6; margin-bottom: 25px;">If PercentSolver helped you, consider supporting with a small Bitcoin donation. Your support keeps this tool free for everyone!</p>
+            <button onclick="document.getElementById('btcAddress').style.display = document.getElementById('btcAddress').style.display === 'none' ? 'block' : 'none'" style="background: linear-gradient(135deg, #6ee7b7 0%, #34d399 25%, #10b981 50%, #059669 75%, #047857 100%); color: white; border: none; padding: 15px 30px; border-radius: 20px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 20px rgba(45, 212, 191, 0.3);" aria-label="Show Bitcoin donation address">Donate Bitcoin</button>
+            <div id="btcAddress" style="display: none; margin-top: 20px; background: #f8fafc; border: 2px solid #2dd4bf; border-radius: 12px; padding: 20px;">
+                <p style="margin-bottom: 10px; font-weight: 600; color: #0f172a;">Bitcoin Address:</p>
+                <code style="font-family: monospace; font-size: 0.9rem; color: #0f172a; word-break: break-all; display: block; margin-bottom: 15px;">bc1qxfc70kg5gtavn3mw5nypps970hqkzw6c885ya4</code>
+                <button onclick="navigator.clipboard.writeText('bc1qxfc70kg5gtavn3mw5nypps970hqkzw6c885ya4'); this.textContent='Copied!'; setTimeout(() => this.textContent='Copy Address', 2000);" style="background: #2dd4bf; color: white; border: none; padding: 8px 15px; border-radius: 8px; cursor: pointer;" aria-label="Copy Bitcoin address to clipboard">Copy Address</button>
+                <p style="color: #059669; font-weight: 600; margin-top: 15px;">Thank you for your support!</p>
             </div>
-        </section>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -871,80 +939,182 @@
             });
         }
 
-        function validateInput(input, min = null, max = null) {
+        function sanitizeNumericInput(value) {
+            // Only allow numbers, decimal point, and minus sign at start
+            let sanitized = value.replace(/[^-0-9.]/g, '');
+            
+            // Ensure only one decimal point
+            const parts = sanitized.split('.');
+            if (parts.length > 2) {
+                sanitized = parts[0] + '.' + parts.slice(1).join('');
+            }
+            
+            // Ensure minus sign only at beginning
+            if (sanitized.indexOf('-') > 0) {
+                sanitized = sanitized.replace(/-/g, '');
+            }
+            
+            return sanitized;
+        }
+
+        function validateInput(input, min = null, max = null, customValidation = null) {
             const value = parseFloat(input.value);
             const errorElement = input.parentNode.querySelector('.error-message');
             
-            if (input.value === '' || isNaN(value)) {
-                input.classList.add('error');
-                errorElement.style.display = 'block';
-                return false;
-            }
-            
-            if (min !== null && value < min) {
-                input.classList.add('error');
-                errorElement.style.display = 'block';
-                return false;
-            }
-            
-            if (max !== null && value > max) {
-                input.classList.add('error');
-                errorElement.style.display = 'block';
-                return false;
-            }
-            
+            // Clear previous error state
             input.classList.remove('error');
             errorElement.style.display = 'none';
+            
+            // Check if empty or invalid number
+            if (input.value === '' || isNaN(value)) {
+                if (input.value !== '') {
+                    input.classList.add('error');
+                    errorElement.textContent = 'Please enter a valid number';
+                    errorElement.style.display = 'block';
+                }
+                return false;
+            }
+            
+            // Check minimum value
+            if (min !== null && value < min) {
+                input.classList.add('error');
+                errorElement.textContent = min === 0.01 ? 'Value must be greater than 0' : `Value must be at least ${min}`;
+                errorElement.style.display = 'block';
+                return false;
+            }
+            
+            // Check maximum value
+            if (max !== null && value > max) {
+                input.classList.add('error');
+                errorElement.textContent = `Value must not exceed ${max}`;
+                errorElement.style.display = 'block';
+                return false;
+            }
+            
+            // Custom validation (e.g., for grade calculator)
+            if (customValidation && !customValidation(value, input)) {
+                return false;
+            }
+            
             return true;
         }
 
-        function updateResult(inputIds, resultId, calculation, validationRules = []) {
+        function validateGradeInputs(pointsEarned, totalPoints) {
+            const earnedElement = document.getElementById('pointsEarned');
+            const totalElement = document.getElementById('totalPoints');
+            const earnedError = earnedElement.parentNode.querySelector('.error-message');
+            const totalError = totalElement.parentNode.querySelector('.error-message');
+            
+            // Clear previous errors
+            earnedElement.classList.remove('error');
+            totalElement.classList.remove('error');
+            earnedError.style.display = 'none';
+            totalError.style.display = 'none';
+            
+            let isValid = true;
+            
+            // Validate total points first
+            if (isNaN(totalPoints) || totalPoints <= 0) {
+                totalElement.classList.add('error');
+                totalError.textContent = 'Total points must be greater than 0';
+                totalError.style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validate earned points
+            if (isNaN(pointsEarned) || pointsEarned < 0) {
+                earnedElement.classList.add('error');
+                earnedError.textContent = 'Points earned must be 0 or greater';
+                earnedError.style.display = 'block';
+                isValid = false;
+            } else if (pointsEarned > totalPoints && totalPoints > 0) {
+                earnedElement.classList.add('error');
+                earnedError.textContent = 'Points earned cannot exceed total points';
+                earnedError.style.display = 'block';
+                isValid = false;
+            }
+            
+            return isValid;
+        }
+
+        function updateResult(inputIds, resultId, calculation, validationRules = [], customValidation = null) {
             const inputs = inputIds.map(id => document.getElementById(id));
             const result = document.getElementById(resultId);
             
             function calculate() {
-                let allValid = true;
-                const values = [];
-                
-                inputs.forEach((input, index) => {
-                    if (input.tagName === 'SELECT') {
-                        values.push(parseFloat(input.value) || 1);
-                        return;
-                    }
-                    
-                    const rules = validationRules[index] || {};
-                    const isValid = validateInput(input, rules.min, rules.max);
-                    
-                    if (!isValid) {
-                        allValid = false;
-                        values.push(0);
-                    } else {
-                        values.push(parseFloat(input.value) || 0);
-                    }
-                });
-                
-                if (!allValid || inputs.some((input, index) => {
-                    if (input.tagName === 'SELECT') return false;
-                    return input.value === '';
-                })) {
-                    result.textContent = 'Enter valid values above';
-                    return;
-                }
-                
                 try {
+                    let allValid = true;
+                    const values = [];
+                    
+                    // Handle custom validation for grade calculator
+                    if (customValidation === 'grade') {
+                        const pointsEarned = parseFloat(inputs[0].value) || 0;
+                        const totalPoints = parseFloat(inputs[1].value) || 0;
+                        
+                        if (!validateGradeInputs(pointsEarned, totalPoints)) {
+                            result.textContent = 'Enter valid values above';
+                            return;
+                        }
+                        
+                        if (inputs[0].value === '' || inputs[1].value === '') {
+                            result.textContent = 'Enter values above';
+                            return;
+                        }
+                        
+                        values.push(pointsEarned, totalPoints);
+                    } else {
+                        // Standard validation for other calculators
+                        inputs.forEach((input, index) => {
+                            if (input.tagName === 'SELECT') {
+                                values.push(parseFloat(input.value) || 1);
+                                return;
+                            }
+                            
+                            const rules = validationRules[index] || {};
+                            const isValid = validateInput(input, rules.min, rules.max);
+                            
+                            if (!isValid || input.value === '') {
+                                allValid = false;
+                                values.push(0);
+                            } else {
+                                values.push(parseFloat(input.value));
+                            }
+                        });
+                        
+                        // Check for division by zero scenarios
+                        if (resultId === 'result2' && values[1] === 0) {
+                            result.textContent = 'Cannot divide by zero - total must be greater than 0';
+                            return;
+                        }
+                        if (resultId === 'result3' && values[0] === 0) {
+                            result.textContent = 'Cannot calculate increase from zero - original value must be greater than 0';
+                            return;
+                        }
+                        if (resultId === 'result4' && values[0] === 0) {
+                            result.textContent = 'Cannot calculate decrease from zero - original value must be greater than 0';
+                            return;
+                        }
+                        
+                        if (!allValid || inputs.some(input => input.tagName !== 'SELECT' && input.value === '')) {
+                            result.textContent = 'Enter valid values above';
+                            return;
+                        }
+                    }
+                    
                     const calculatedResult = calculation(...values);
                     result.textContent = calculatedResult;
                     result.style.transform = 'scale(1.02)';
                     setTimeout(() => result.style.transform = 'scale(1)', 200);
                 } catch (error) {
-                    result.textContent = 'Invalid calculation';
+                    console.error('Calculation error:', error);
+                    result.textContent = 'Calculation error occurred';
                 }
             }
             
             inputs.forEach(input => {
-                input.addEventListener('input', calculate);
-                input.addEventListener('change', calculate);
-                input.addEventListener('blur', calculate);
+                ['input', 'change', 'blur'].forEach(event => {
+                    input.addEventListener(event, calculate);
+                });
             });
         }
 
@@ -956,12 +1126,14 @@
 
         // Calculator 2: X is what % of Y?
         updateResult(['number2', 'total1'], 'result2', (number, total) => {
+            if (total === 0) return 'Cannot divide by zero';
             const result = (number / total) * 100;
             return `${formatNumber(number)} is ${formatNumber(result)}% of ${formatNumber(total)}`;
         }, [{min: 0}, {min: 0.01}]);
 
         // Calculator 3: Percentage Increase
         updateResult(['original1', 'new1'], 'result3', (original, newVal) => {
+            if (original === 0) return 'Cannot calculate increase from zero';
             const increase = ((newVal - original) / original) * 100;
             if (increase < 0) {
                 return `Actually a ${formatNumber(Math.abs(increase))}% decrease (${formatNumber(original)} → ${formatNumber(newVal)})`;
@@ -971,6 +1143,7 @@
 
         // Calculator 4: Percentage Decrease
         updateResult(['original2', 'new2'], 'result4', (original, newVal) => {
+            if (original === 0) return 'Cannot calculate decrease from zero';
             const change = ((original - newVal) / original) * 100;
             if (change < 0) {
                 return `Actually a ${formatNumber(Math.abs(change))}% increase (${formatNumber(original)} → ${formatNumber(newVal)})`;
@@ -999,45 +1172,56 @@
             return `Tax: ${formatNumber(taxAmount)} • Total: ${formatNumber(totalPrice)} (${formatNumber(taxRate)}% tax)`;
         }, [{min: 0.01}, {min: 0, max: 50}]);
 
-        // Calculator 8: Grade Percentage Calculator
+        // Calculator 8: Grade Percentage Calculator (with improved validation)
         updateResult(['pointsEarned', 'totalPoints'], 'result8', (earned, total) => {
-            if (earned > total) {
-                return 'Points earned cannot exceed total points';
-            }
+            if (total === 0) return 'Cannot divide by zero';
             const percentage = (earned / total) * 100;
             let grade = 'F';
-            if (percentage >= 90) grade = 'A';
-            else if (percentage >= 80) grade = 'B';
-            else if (percentage >= 70) grade = 'C';
-            else if (percentage >= 60) grade = 'D';
-            return `${formatNumber(percentage, 1)}% • Grade: ${grade} (${formatNumber(earned, 1)}/${formatNumber(total, 1)} points)`;
-        }, [{min: 0}, {min: 0.1}]);
+            let gradeDescription = 'Failing';
+            
+            if (percentage >= 90) {
+                grade = 'A';
+                gradeDescription = 'Excellent';
+            } else if (percentage >= 80) {
+                grade = 'B';
+                gradeDescription = 'Good';
+            } else if (percentage >= 70) {
+                grade = 'C';
+                gradeDescription = 'Average';
+            } else if (percentage >= 60) {
+                grade = 'D';
+                gradeDescription = 'Below Average';
+            }
+            
+            return `${formatNumber(percentage, 1)}% • Grade: ${grade} (${gradeDescription}) • ${formatNumber(earned, 1)}/${formatNumber(total, 1)} points`;
+        }, [], 'grade');
 
         // Calculator 9: Markup Calculator
         updateResult(['cost', 'markup'], 'result9', (cost, markupPercent) => {
             const markupAmount = (markupPercent / 100) * cost;
             const sellingPrice = cost + markupAmount;
-            const profitMargin = (markupAmount / sellingPrice) * 100;
+            const profitMargin = sellingPrice > 0 ? (markupAmount / sellingPrice) * 100 : 0;
             return `Sell: ${formatNumber(sellingPrice)} • Profit: ${formatNumber(markupAmount)} (${formatNumber(profitMargin, 1)}% margin)`;
-        }, [{min: 0.01}, {min: 0}]);
+        }, [{min: 0.01}, {min: 0, max: 1000}]);
 
         // Calculator 10: Simple Interest Calculator
         updateResult(['principal', 'rate', 'time'], 'result10', (principal, rate, time) => {
             const interest = (principal * rate * time) / 100;
             const total = principal + interest;
             return `Interest: ${formatNumber(interest)} • Total: ${formatNumber(total)} (${formatNumber(time, 1)} years at ${formatNumber(rate)}%)`;
-        }, [{min: 0.01}, {min: 0, max: 100}, {min: 0.1}]);
+        }, [{min: 0.01}, {min: 0, max: 100}, {min: 0.01, max: 100}]);
 
         // Calculator 11: Compound Interest Calculator
         updateResult(['principal2', 'rate2', 'compound', 'time2'], 'result11', (principal, rate, compound, time) => {
+            if (compound === 0) return 'Invalid compounding frequency';
             const amount = principal * Math.pow((1 + (rate/100)/compound), compound * time);
             const interest = amount - principal;
             const compoundingText = compound == 1 ? 'annually' : compound == 2 ? 'semi-annually' : 
                                   compound == 4 ? 'quarterly' : compound == 12 ? 'monthly' : 'daily';
             return `Final: ${formatNumber(amount)} • Interest: ${formatNumber(interest)} (${compoundingText})`;
-        }, [{min: 0.01}, {min: 0, max: 100}, {}, {min: 0.1}]);
+        }, [{min: 0.01}, {min: 0, max: 100}, {}, {min: 0.01, max: 100}]);
 
-        // Enhanced user experience
+        // Enhanced user experience with improved input handling
         document.addEventListener('DOMContentLoaded', function() {
             const inputs = document.querySelectorAll('input[type="number"], select');
             
@@ -1056,19 +1240,57 @@
                 });
 
                 if (input.type === 'number') {
-                    input.addEventListener('input', function() {
-                        // Allow only numbers, one decimal point, and one minus sign at the start
-                        this.value = this.value.replace(/[^-0-9.]/g, '');
+                    // Real-time input sanitization
+                    input.addEventListener('input', function(e) {
+                        const cursorPosition = this.selectionStart;
+                        const originalValue = this.value;
+                        const sanitizedValue = sanitizeNumericInput(this.value);
                         
-                        // Ensure only one decimal point
-                        const parts = this.value.split('.');
-                        if (parts.length > 2) {
-                            this.value = parts[0] + '.' + parts.slice(1).join('');
+                        if (originalValue !== sanitizedValue) {
+                            this.value = sanitizedValue;
+                            this.setSelectionRange(cursorPosition - 1, cursorPosition - 1);
+                        }
+                    });
+
+                    // Prevent invalid characters on keypress
+                    input.addEventListener('keypress', function(e) {
+                        const char = String.fromCharCode(e.which);
+                        const currentValue = this.value;
+                        const cursorPosition = this.selectionStart;
+                        
+                        // Allow control keys (backspace, delete, tab, escape, enter)
+                        if ([8, 9, 27, 13, 46].indexOf(e.keyCode) !== -1 ||
+                            // Allow Ctrl+A, Ctrl+C, Ctrl+V, Ctrl+X
+                            (e.keyCode === 65 && e.ctrlKey === true) ||
+                            (e.keyCode === 67 && e.ctrlKey === true) ||
+                            (e.keyCode === 86 && e.ctrlKey === true) ||
+                            (e.keyCode === 88 && e.ctrlKey === true)) {
+                            return;
                         }
                         
-                        // Ensure minus sign is only at the beginning
-                        if (this.value.indexOf('-') > 0) {
-                            this.value = this.value.replace(/-/g, '');
+                        // For percentage inputs, don't allow negative values
+                        if ((input.id === 'percent1' || input.id === 'discount1' || input.id === 'tip' || 
+                             input.id === 'taxRate' || input.id === 'markup' || input.id === 'rate' || 
+                             input.id === 'rate2' || input.id === 'pointsEarned' || input.id === 'totalPoints' ||
+                             input.id === 'number1' || input.id === 'number2' || input.id === 'new1' || 
+                             input.id === 'new2' || input.id === 'price1' || input.id === 'price2' || 
+                             input.id === 'bill' || input.id === 'cost' || input.id === 'principal' || 
+                             input.id === 'principal2' || input.id === 'time' || input.id === 'time2' || 
+                             input.id === 'total1') && char === '-') {
+                            e.preventDefault();
+                            return;
+                        }
+                        
+                        // Only allow numbers and decimal point
+                        if (!/[0-9.]/.test(char)) {
+                            e.preventDefault();
+                            return;
+                        }
+                        
+                        // Don't allow multiple decimal points
+                        if (char === '.' && currentValue.indexOf('.') !== -1) {
+                            e.preventDefault();
+                            return;
                         }
                     });
                 }
@@ -1087,142 +1309,6 @@
                 }, index * 100);
             });
         });
-    </script>
-
-    <!-- Schema.org structured data for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "PercentSolver - Advanced Percentage Calculator Suite",
-        "url": "https://percentsolver.com",
-        "description": "Complete percentage calculator suite with 11 specialized tools for calculating percentages, discounts, tips, taxes, grades, markup, simple interest, compound interest, and more. Free, fast, accurate, and mobile-friendly percentage solver for all your calculation needs.",
-        "applicationCategory": ["CalculatorApplication", "UtilityApplication", "EducationalApplication", "FinanceApplication"],
-        "operatingSystem": "Any",
-        "isAccessibleForFree": true,
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
-        "creator": {
-            "@type": "Organization",
-            "name": "PercentSolver",
-            "url": "https://percentsolver.com"
-        },
-        "featureList": [
-            "Calculate percentage of numbers",
-            "Find what percentage one number is of another", 
-            "Calculate percentage increases and decreases",
-            "Discount calculator with final prices",
-            "Tip calculator with totals",
-            "Sales tax calculator",
-            "Grade percentage calculator with letter grades",
-            "Business markup calculator",
-            "Simple interest calculator",
-            "Compound interest calculator",
-            "Mobile-friendly responsive interface",
-            "Instant real-time calculations"
-        ],
-        "keywords": "percentage calculator, percent calculator, calculate percentage, discount calculator, tip calculator, sales tax calculator, grade calculator, markup calculator, interest calculator, compound interest calculator, business calculator, financial calculator",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "bestRating": "5",
-            "worstRating": "1",
-            "ratingCount": "2847"
-        }
-    }
-    </script>
-
-    <!-- Enhanced FAQ structured data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "How do you calculate a percentage?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "To calculate a percentage, divide the part by the whole and multiply by 100. The formula is: (Part ÷ Whole) × 100 = Percentage. For example, to find what percentage 25 is of 100: (25 ÷ 100) × 100 = 25%."
-                }
-            },
-            {
-                "@type": "Question", 
-                "name": "How do you calculate percentage increase?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "To calculate percentage increase: ((New Value - Original Value) ÷ Original Value) × 100. For example, if a value increases from 100 to 150: ((150 - 100) ÷ 100) × 100 = 50% increase."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is 15% of 200?",
-                "acceptedAnswer": {
-                    "@type": "Answer", 
-                    "text": "15% of 200 is 30. To calculate: (15 ÷ 100) × 200 = 0.15 × 200 = 30. This type of calculation is commonly used for discounts, tips, and taxes."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How do you calculate a discount percentage?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "To calculate the final price after a discount: Final Price = Original Price × (1 - Discount Percentage ÷ 100). For example, a $100 item with 20% discount: $100 × (1 - 20÷100) = $100 × 0.8 = $80."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How do you calculate sales tax?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Sales tax calculation: Tax Amount = Price × (Tax Rate ÷ 100). Total Price = Original Price + Tax Amount. For example, $100 item with 8.25% tax: Tax = $100 × 0.0825 = $8.25, Total = $108.25."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How do you calculate compound interest?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Compound interest formula: A = P(1 + r/n)^(nt), where A=final amount, P=principal, r=annual interest rate (decimal), n=number of times interest compounds per year, t=time in years."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How do you calculate grade percentages?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Grade percentage = (Points Earned ÷ Total Points) × 100. For example, scoring 85 out of 100 points: (85 ÷ 100) × 100 = 85%. Common grade scales: 90-100%=A, 80-89%=B, 70-79%=C, 60-69%=D."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How do you calculate business markup?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Markup percentage = ((Selling Price - Cost Price) ÷ Cost Price) × 100. Selling Price = Cost Price × (1 + Markup% ÷ 100). For example, item costs $50, markup 40%: Selling Price = $50 × 1.4 = $70."
-                }
-            }
-        ]
-    }
-    </script>
-
-    <!-- Organization structured data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "PercentSolver",
-        "url": "https://percentsolver.com",
-        "logo": "https://percentsolver.com/logo.png",
-        "description": "Advanced online percentage calculator suite providing 11 specialized tools for percentage calculations, trusted by students, professionals, and businesses worldwide.",
-        "sameAs": [
-            "https://twitter.com/PercentSolver",
-            "https://facebook.com/PercentSolver"
-        ]
-    }
     </script>
 </body>
 </html>
