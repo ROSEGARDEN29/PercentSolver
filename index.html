@@ -917,7 +917,7 @@
             <div id="btcAddress" style="display: none; margin-top: 20px; background: #f8fafc; border: 2px solid #2dd4bf; border-radius: 12px; padding: 20px;">
                 <p style="margin-bottom: 10px; font-weight: 600; color: #0f172a;">Bitcoin Address:</p>
                 <code style="font-family: monospace; font-size: 0.9rem; color: #0f172a; word-break: break-all; display: block; margin-bottom: 15px;">bc1qxfc70kg5gtavn3mw5nypps970hqkzw6c885ya4</code>
-                <button onclick="navigator.clipboard.writeText('bc1qxfc70kg5gtavn3mw5nypps970hqkzw6c885ya4'); this.textContent='Copied!'; setTimeout(() => this.textContent='Copy Address', 2000);" style="background: #2dd4bf; color: white; border: none; padding: 8px 15px; border-radius: 8px; cursor: pointer;" aria-label="Copy Bitcoin address to clipboard">Copy Address</button>
+                <button onclick="copyBitcoinAddress(this)" style="background: #2dd4bf; color: white; border: none; padding: 8px 15px; border-radius: 8px; cursor: pointer;" aria-label="Copy Bitcoin address to clipboard">Copy Address</button>
                 <p style="color: #059669; font-weight: 600; margin-top: 15px;">Thank you for your support!</p>
             </div>
         </div>
@@ -1310,6 +1310,43 @@
                 }, index * 100);
             });
         });
+		
+		function copyBitcoinAddress(button) {
+			const address = 'bc1qxfc70kg5gtavn3mw5nypps970hqkzw6c885ya4';
+    
+			if (navigator.clipboard && window.isSecureContext) {
+				navigator.clipboard.writeText(address).then(() => {
+				button.textContent = 'Copied!';
+				setTimeout(() => button.textContent = 'Copy Address', 2000);
+			}).catch(() => {
+            copyToClipboardFallback(address, button);
+        });
+    } else {
+        copyToClipboardFallback(address, button);
+    }
+}
+
+function copyToClipboardFallback(text, button) {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.left = '-999999px';
+    textArea.style.top = '-999999px';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    
+    try {
+        document.execCommand('copy');
+        button.textContent = 'Copied!';
+        setTimeout(() => button.textContent = 'Copy Address', 2000);
+    } catch (err) {
+        button.textContent = 'Copy failed';
+        setTimeout(() => button.textContent = 'Copy Address', 2000);
+    }
+    
+    document.body.removeChild(textArea);
+	}
     </script>
 </body>
 </html>
