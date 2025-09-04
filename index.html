@@ -136,12 +136,14 @@
             font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 900;
             text-align: center;
-            background: linear-gradient(135deg, #ffffff 0%, #2dd4bf 50%, #14b8a6 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 30%, #ffffff 70%, #f1f5f9 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             margin-bottom: 12px;
             letter-spacing: -0.02em;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
         }
 
         .header .tagline {
@@ -205,6 +207,38 @@
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .calculator-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px 30px;
+            text-align: center;
+            color: var(--text-light);
+            font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+            font-weight: 500;
+            opacity: 0.95;
+            margin-bottom: 40px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 20px;
+        }
+
+        .calculator-list span {
+            display: block;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .calculator-list span:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(45, 212, 191, 0.2);
         }
 
         .calc-grid {
@@ -486,24 +520,6 @@
             margin-top: 60px;
         }
 
-        @media (max-width: 1280px) {
-            .sidebar-ads {
-                position: static;
-                width: 100%;
-                transform: none;
-                margin: 30px auto;
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-                flex-wrap: wrap;
-            }
-            
-            .ad-sidebar {
-                width: 300px;
-                margin-bottom: 0;
-            }
-        }
-
         @media (max-width: 1024px) {
             .calc-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
         }
@@ -521,6 +537,11 @@
             .ad-sidebar {
                 width: 100%;
                 max-width: 350px;
+            }
+
+            .calculator-list {
+                grid-template-columns: 1fr;
+                gap: 10px;
             }
         }
 
@@ -576,7 +597,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <h1>RapidPercent</h1>
+            <h1>Rapid Percent</h1>
             <p class="tagline">Advanced Percentage Calculator Suite • 11 Professional Tools • Fast • Accurate • Free</p>
             <p class="subtitle">Complete percentage solutions for business, education, shopping, and personal finance</p>
         </div>
@@ -585,7 +606,20 @@
     <div class="container">
         <section class="calculator-section">
             <h2 class="section-title">Free Online Percentage Calculators</h2>
-            <p class="section-description">Calculate percentages instantly with our free online calculator suite. Solve discounts, tips, grades, interest, and business calculations with professional accuracy.</p>
+            
+            <div class="calculator-list">
+                <span>Basic Percentage</span>
+                <span>Percentage of Number</span>
+                <span>Percentage Increase</span>
+                <span>Percentage Decrease</span>
+                <span>Discount Calculator</span>
+                <span>Tip Calculator</span>
+                <span>Sales Tax Calculator</span>
+                <span>Grade Calculator</span>
+                <span>Markup Calculator</span>
+                <span>Simple Interest</span>
+                <span>Compound Interest</span>
+            </div>
             
             <div class="calc-grid">
                 <div class="calc-card" id="basic-percentage">
