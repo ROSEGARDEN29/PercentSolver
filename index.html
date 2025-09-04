@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Percentage Calculator - RapidPercent.com | 11 Free Advanced Percentage Calculators Online</title>
-    <meta name="description" content="Complete percentage calculator suite with 11 specialized tools. Calculate percentages, discounts, tips, taxes, compound interest, markup, profit margins, grade percentages, and more. Free, fast, and mobile-friendly percentage solver for all your calculation needs.">
-    <meta name="keywords" content="percentage calculator, percent calculator, calculate percentage, percentage increase, percentage decrease, discount calculator, tip calculator, tax calculator, compound interest calculator, markup calculator, profit margin calculator, grade percentage calculator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>RapidPercent - Free Online Percentage Calculator | 11 Specialized Tools</title>
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="description" content="Free online percentage calculator with 11 specialized tools. Calculate discounts, tips, grades, compound interest instantly. Fast, accurate, mobile-friendly.">
+    <meta name="keywords" content="percentage calculator, discount calculator, tip calculator, compound interest, grade calculator">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://RapidPercent.com">
     
@@ -582,12 +583,12 @@
 
     <div class="container">
         <section class="calculator-section">
-            <h2 class="section-title">Essential Percentage Calculators</h2>
-            <p class="section-description">Master percentage calculations with our comprehensive suite of 11 specialized calculators. From basic percentage calculations to advanced business and financial computations, solve any percentage problem instantly with professional accuracy.</p>
+            <h2 class="section-title">Free Online Percentage Calculators</h2>
+            <p class="section-description">Calculate percentages instantly with our free online calculator suite. Solve discounts, tips, grades, interest, and business calculations with professional accuracy.</p>
             
             <div class="calc-grid">
-                <div class="calc-card">
-                    <h3>🧮 What is X% of Y?</h3>
+                <div class="calc-card" id="basic-percentage">
+                    <h3>Basic Percentage Calculator</h3>
                     <div class="input-group">
                         <label for="percent1">Percentage (%):</label>
                         <input type="number" id="percent1" placeholder="e.g., 25" step="0.01" min="0" aria-label="Enter percentage value">
@@ -601,8 +602,8 @@
                     <div class="result" id="result1">Enter values above</div>
                 </div>
 
-                <div class="calc-card">
-                    <h3>📊 X is what % of Y?</h3>
+                <div class="calc-card" id="percentage-of-number">
+                    <h3>Percentage of a Number</h3>
                     <div class="input-group">
                         <label for="number2">Number:</label>
                         <input type="number" id="number2" placeholder="e.g., 50" step="0.01" min="0" aria-label="Enter number">
@@ -616,8 +617,8 @@
                     <div class="result" id="result2">Enter values above</div>
                 </div>
 
-                <div class="calc-card">
-                    <h3>📈 Percentage Increase</h3>
+                <div class="calc-card" id="percentage-increase">
+                    <h3>Percentage Increase Calculator</h3>
                     <div class="input-group">
                         <label for="original1">Original value:</label>
                         <input type="number" id="original1" placeholder="e.g., 100" step="0.01" min="0.01" aria-label="Enter original value">
@@ -631,8 +632,8 @@
                     <div class="result" id="result3">Enter values above</div>
                 </div>
 
-                <div class="calc-card">
-                    <h3>📉 Percentage Decrease</h3>
+                <div class="calc-card" id="percentage-decrease">
+                    <h3>Percentage Decrease Calculator</h3>
                     <div class="input-group">
                         <label for="original2">Original value:</label>
                         <input type="number" id="original2" placeholder="e.g., 150" step="0.01" min="0.01" aria-label="Enter original value">
@@ -646,8 +647,8 @@
                     <div class="result" id="result4">Enter values above</div>
                 </div>
 
-                <div class="calc-card">
-                    <h3>💰 Discount Calculator</h3>
+                <div class="calc-card" id="discount-calculator">
+                    <h3>Discount Calculator</h3>
                     <div class="input-group">
                         <label for="price1">Original price ($):</label>
                         <input type="number" id="price1" placeholder="e.g., 100" step="0.01" min="0.01" aria-label="Enter original price">
@@ -661,8 +662,8 @@
                     <div class="result" id="result5">Enter values above</div>
                 </div>
 
-                <div class="calc-card">
-                    <h3>🍽️ Tip Calculator</h3>
+                <div class="calc-card" id="tip-calculator">
+                    <h3>Tip Calculator</h3>
                     <div class="input-group">
                         <label for="bill">Bill amount ($):</label>
                         <input type="number" id="bill" placeholder="e.g., 50" step="0.01" min="0.01" aria-label="Enter bill amount">
@@ -676,8 +677,8 @@
                     <div class="result" id="result6">Enter values above</div>
                 </div>
 				
-				<div class="calc-card">
-                    <h3>💱 Sales Tax Calculator</h3>
+				<div class="calc-card" id="sales-tax-calculator">
+                    <h3>Sales Tax Calculator</h3>
                     <div class="input-group">
                         <label for="price2">Price before tax ($):</label>
                         <input type="number" id="price2" placeholder="e.g., 100" step="0.01" min="0.01" aria-label="Enter price before tax">
@@ -691,8 +692,8 @@
                     <div class="result" id="result7">Enter values above</div>
                 </div>
 
-                <div class="calc-card">
-                    <h3>📝 Grade Percentage Calculator</h3>
+                <div class="calc-card" id="grade-calculator">
+                    <h3>Grade Percentage Calculator</h3>
                     <div class="input-group">
                         <label for="pointsEarned">Points earned:</label>
                         <input type="number" id="pointsEarned" placeholder="e.g., 85" step="0.1" min="0" aria-label="Enter points earned">
@@ -714,8 +715,8 @@
                     </div>
                 </div>
 
-                <div class="calc-card">
-                    <h3>📊 Markup Calculator</h3>
+                <div class="calc-card" id="markup-calculator">
+                    <h3>Markup Calculator</h3>
                     <div class="input-group">
                         <label for="cost">Cost price ($):</label>
                         <input type="number" id="cost" placeholder="e.g., 50" step="0.01" min="0.01" aria-label="Enter cost price">
@@ -729,8 +730,8 @@
                     <div class="result" id="result9">Enter values above</div>
                 </div>
 
-                <div class="calc-card">
-                    <h3>🏦 Simple Interest Calculator</h3>
+                <div class="calc-card" id="simple-interest-calculator">
+                    <h3>Simple Interest Calculator</h3>
                     <div class="input-group">
                         <label for="principal">Principal amount ($):</label>
                         <input type="number" id="principal" placeholder="e.g., 1000" step="0.01" min="0.01" aria-label="Enter principal amount">
@@ -749,8 +750,8 @@
                     <div class="result" id="result10">Enter values above</div>
                 </div>
 
-                <div class="calc-card">
-                    <h3>💳 Compound Interest Calculator</h3>
+                <div class="calc-card" id="compound-interest-calculator">
+                    <h3>Compound Interest Calculator</h3>
                     <div class="input-group">
                         <label for="principal2">Principal amount ($):</label>
                         <input type="number" id="principal2" placeholder="e.g., 1000" step="0.01" min="0.01" aria-label="Enter principal amount">
@@ -924,7 +925,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 RapidPercent.com - Advanced Online Percentage Calculator Suite</p>
+            <p>&copy; 2025 RapidPercent.com - Free Online Percentage Calculator Suite</p>
             <p style="margin-top: 12px; opacity: 0.9;">11 Professional Calculators • Fast • Accurate • Free • Mobile-Friendly</p>
             <p style="margin-top: 8px; opacity: 0.8; font-size: 0.9rem;">Trusted by students, professionals, and businesses worldwide</p>
         </div>
