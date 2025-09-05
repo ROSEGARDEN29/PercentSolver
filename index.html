@@ -133,18 +133,19 @@
         }
 
         .header h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 900;
-            text-align: center;
-            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 30%, #ffffff 70%, #f1f5f9 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 12px;
-            letter-spacing: -0.02em;
-            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-        }
+			font-size: clamp(2.5rem, 5vw, 4rem);
+			font-weight: 900;
+			text-align: center;
+			background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.95) 70%, rgba(255, 255, 255, 0.85) 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			margin-bottom: 12px;
+			letter-spacing: -0.02em;
+			text-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+			filter: drop-shadow(0 1px 3px rgba(255, 255, 255, 0.2));
+			backdrop-filter: blur(2px);
+		}
 
         .header .tagline {
             text-align: center;
@@ -210,36 +211,65 @@
         }
 
         .calculator-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px 30px;
-            text-align: center;
-            color: var(--text-light);
-            font-size: clamp(0.9rem, 1.8vw, 1.1rem);
-            font-weight: 500;
-            opacity: 0.95;
-            margin-bottom: 40px;
-            max-width: 1000px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0 20px;
-        }
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			gap: 8px 15px;
+			text-align: center;
+			color: var(--text-light);
+			font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+			font-weight: 500;
+			opacity: 0.95;
+			margin-bottom: 30px;
+			max-width: 1200px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 20px;
+			background: rgba(255, 255, 255, 0.08);
+			backdrop-filter: blur(10px);
+			border-radius: 16px;
+			border: 1px solid rgba(255, 255, 255, 0.15);
+			box-shadow: 0 8px 20px rgba(45, 212, 191, 0.1);
+		}
 
-        .calculator-list span {
-            display: block;
-            padding: 8px 12px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(5px);
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-        }
+		.calculator-list span {
+			display: inline-block;
+			padding: 6px 12px;
+			background: transparent;
+			border-radius: 8px;
+			transition: all 0.2s ease;
+			white-space: nowrap;
+		}
 
-        .calculator-list span:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(45, 212, 191, 0.2);
-        }
+		.calculator-list span:hover {
+			background: rgba(255, 255, 255, 0.1);
+			transform: scale(1.05);
+		}
+
+		.calculator-list span:not(:last-child)::after {
+			content: "•";
+			margin-left: 15px;
+			opacity: 0.6;
+			font-weight: 300;
+		}
+
+		@media (max-width: 768px) {
+			.calculator-list {
+			flex-direction: column;
+			gap: 6px;
+			padding: 15px;
+		}
+    
+		.calculator-list span:not(:last-child)::after {
+			display: none;
+		}
+    
+		.calculator-list span {
+			width: 100%;
+			text-align: center;
+		}
+	}
 
         .calc-grid {
             display: grid;
@@ -389,37 +419,49 @@
         }
 
         .sidebar-ads {
-            width: 100%;
-            max-width: 1200px;
-            margin: 40px auto;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            z-index: 1000;
-        }
+			width: 100%;
+			max-width: 1200px;
+			margin: 40px auto;
+			display: flex !important;
+			justify-content: center;
+			gap: 30px;
+			flex-wrap: wrap;
+			z-index: 1000;
+			opacity: 1;
+			visibility: visible;
+		}
 
         .ad-sidebar {
-            background: var(--glass);
-            backdrop-filter: blur(15px);
-            border: 2px solid rgba(45, 212, 191, 0.3);
-            border-radius: 20px;
-            padding: 25px 15px;
-            text-align: center;
-            margin-bottom: 0;
-            color: #2dd4bf;
-            font-size: 16px;
-            font-weight: 600;
-            box-shadow: var(--shadow);
-            transition: all 0.3s ease;
-            flex: 1;
-            min-width: 200px;
-            max-width: 300px;
-            height: 150px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+			background: var(--glass);
+			backdrop-filter: blur(15px);
+			border: 2px solid rgba(45, 212, 191, 0.3);
+			border-radius: 20px;
+			padding: 25px 15px;
+			text-align: center;
+			margin-bottom: 0;
+			color: #2dd4bf;
+			font-size: 16px;
+			font-weight: 600;
+			box-shadow: var(--shadow);
+			transition: all 0.3s ease;
+			flex: 1;
+			min-width: 200px;
+			max-width: 300px;
+			height: 150px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 1;
+			visibility: visible;
+		}
+
+		@media (min-width: 769px) {
+			.ad-sidebar {
+			opacity: 1;
+			visibility: visible;
+			display: flex;
+		}
+	}
 
         .ad-sidebar:hover {
             transform: scale(1.02);
@@ -592,7 +634,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <h1>Rapid Percent</h1>
+            <h1>Rapid Percent %</h1>
             <p class="tagline">Advanced Percentage Calculator Suite • 11 Professional Tools • Fast • Accurate • Free</p>
             <p class="subtitle">Complete percentage solutions for business, education, shopping, and personal finance</p>
         </div>
